@@ -105,3 +105,5 @@ publishing:
     enableTaskNotes: true
     enablePrettyLinks: true
     searchMode: search
+site:
+    siteUrl: www.threesplus.com
