@@ -16,10 +16,10 @@ jobs:
         fetch-depth: 0
 
     - name: Restore Node modules cache
-      working-directory: ./docs
       uses: actions/cache@v2
       id: node-modules-cache
       with:
+        working-directory: ./docs
         path: |
           node_modules
           .next/*
@@ -36,9 +36,9 @@ jobs:
       run: "(test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git pull && yarn && cd ..) || (echo 'init dendron next' && yarn dendron publish init)"
 
     - name: Restore Next cache
-      working-directory: ./docs
       uses: actions/cache@v2
       with:
+        working-directory: ./docs
         path: .next/.next/cache
         # Generate a new cache whenever packages or source files change.
         key: ${{ runner.os }}-nextjs-${{ hashFiles('.next/yarn.lock', '.next/package-lock.json') }}-${{ hashFiles('.next/**.[jt]s', '.next/**.[jt]sx') }}
@@ -48,9 +48,9 @@ jobs:
       run: yarn dendron publish export --target github --yes
 
     - name: Deploy site
-      working-directory: ./docs
       uses: peaceiris/actions-gh-pages@v3
       with:
+        working-directory: ./docs
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: pages
         publish_dir: docs/
