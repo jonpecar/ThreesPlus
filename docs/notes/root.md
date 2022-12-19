@@ -2,7 +2,7 @@
 id: 2hqz89w2mg08wdjq9bdvvz2
 title: Threes Plus the Card Game
 desc: ''
-updated: 1671438925705
+updated: 1671445167798
 created: 1671351863937
 ---
 # Overview
@@ -12,9 +12,15 @@ built of rules which have been ordanically added over time. It is intended that 
 book will be kept up to date as rules are organically added through player suggestions.
 
 If you would like to contribute new rules or modifications to existing rules, please
-submit an issue or pull request at the GitHub page which can be found [here](https://github.com/jonpecar/ThreesPlus). New rules will be considered on a case-by-case basis depending
+submit an issue or pull request at the GitHub page which can be found 
+[here](https://github.com/jonpecar/ThreesPlus).
+New rules will be considered on a case-by-case basis depending
 on how the integrate with existing rules, the value they add and their level of
-complexity.
+complexity. Please provide details in your pull request or issue description outlining
+how the proposed change will improve the game.
+
+In addition to rule changes, please feel free to contribute improvements to the rules
+pages including items such as illustrations or improved descriptions.
 
 # How To Play
 
