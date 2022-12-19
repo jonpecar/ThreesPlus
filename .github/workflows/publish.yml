@@ -45,11 +45,10 @@ jobs:
       working-directory: ./docs
       run: yarn dendron publish export --target github --yes
 
-    - name: Deploy site
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Upload Site Artifact
+      uses: actions/upload-pages-artifact@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: pages
-        publish_dir: ./docs/docs/
-        force_orphan: true
-        cname: https://threesplus.com
+        path: ./docs/docs
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
