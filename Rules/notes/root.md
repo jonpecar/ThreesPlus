@@ -2,7 +2,7 @@
 id: 2hqz89w2mg08wdjq9bdvvz2
 title: Threes Plus the Card Game
 desc: ''
-updated: 1671353855791
+updated: 1671438925705
 created: 1671351863937
 ---
 # Overview
@@ -31,16 +31,8 @@ order and end-game.
 
 The following sections outline the rules which apply to played cards.
 
+** This section is under construction **
+
 [[Rules For All Cards]]
 
 [[Rules For Individual Cards]]
-
-## Lookup
-
-This section contains useful links to related resources.
-
-- [Getting Started Guide](https://link.dendron.so/6b25)
-- [Discord](https://link.dendron.so/6b23)
-- [Home Page](https://wiki.dendron.so/)
-- [Github](https://link.dendron.so/6b24)
-- [Developer Docs](https://docs.dendron.so/)
