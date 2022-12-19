@@ -17,36 +17,42 @@ jobs:
 
     - name: Restore Node modules cache
       uses: actions/cache@v2
+      working-directory: ./docs
       id: node-modules-cache
       with:
         path: |
-          docs/node_modules
-          docs/.next/*
-          !docs/.next/.next/cache
-          !docs/.next/.env.*
+          node_modules
+          .next/*
+          !.next/.next/cache
+          !.next/.env.*
         key: ${{ runner.os }}-dendronv2-${{ hashFiles('**/yarn.lock', '**/package-lock.json') }}
 
     - name: Install dependencies
+      working-directory: ./docs
       run: yarn
 
     - name: Initialize or pull nextjs template
-      run: "(cd docs) && (test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git pull && yarn && cd ..) || (echo 'init dendron next' && yarn dendron publish init)"
+      working-directory: ./docs
+      run: "(test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git pull && yarn && cd ..) || (echo 'init dendron next' && yarn dendron publish init)"
 
     - name: Restore Next cache
+      working-directory: ./docs
       uses: actions/cache@v2
       with:
-        path: docs/.next/.next/cache
+        path: .next/.next/cache
         # Generate a new cache whenever packages or source files change.
-        key: ${{ runner.os }}-nextjs-${{ hashFiles('docs/.next/yarn.lock', 'docs/.next/package-lock.json') }}-${{ hashFiles('docs/.next/**.[jt]s', 'docs/.next/**.[jt]sx') }}
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('.next/yarn.lock', '.next/package-lock.json') }}-${{ hashFiles('.next/**.[jt]s', '.next/**.[jt]sx') }}
 
     - name: Export notes
+      working-directory: ./docs
       run: yarn dendron publish export --target github --yes
 
     - name: Deploy site
+      working-directory: ./docs
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: pages
-        publish_dir: docs/docs/
+        publish_dir: docs/
         force_orphan: true
-        cname: threesplus.com
+        cname: https://threesplus.com
