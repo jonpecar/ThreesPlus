@@ -20,24 +20,24 @@ jobs:
       id: node-modules-cache
       with:
         path: |
-          node_modules
-          .next/*
-          !.next/.next/cache
-          !.next/.env.*
+          docs/node_modules
+          docs/.next/*
+          !docs/.next/.next/cache
+          !docs/.next/.env.*
         key: ${{ runner.os }}-dendronv2-${{ hashFiles('**/yarn.lock', '**/package-lock.json') }}
 
     - name: Install dependencies
       run: yarn
 
     - name: Initialize or pull nextjs template
-      run: "(test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git pull && yarn && cd ..) || (echo 'init dendron next' && yarn dendron publish init)"
+      run: "(cd docs) && (test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git pull && yarn && cd ..) || (echo 'init dendron next' && yarn dendron publish init)"
 
     - name: Restore Next cache
       uses: actions/cache@v2
       with:
-        path: .next/.next/cache
+        path: docs/.next/.next/cache
         # Generate a new cache whenever packages or source files change.
-        key: ${{ runner.os }}-nextjs-${{ hashFiles('.next/yarn.lock', '.next/package-lock.json') }}-${{ hashFiles('.next/**.[jt]s', '.next/**.[jt]sx') }}
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('docs/.next/yarn.lock', 'docs/.next/package-lock.json') }}-${{ hashFiles('docs/.next/**.[jt]s', 'docs/.next/**.[jt]sx') }}
 
     - name: Export notes
       run: yarn dendron publish export --target github --yes
@@ -47,6 +47,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: pages
-        publish_dir: docs/
+        publish_dir: docs/docs/
         force_orphan: true
         cname: threesplus.com
