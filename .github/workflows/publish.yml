@@ -19,7 +19,6 @@ jobs:
       uses: actions/cache@v2
       id: node-modules-cache
       with:
-        working-directory: ./docs
         path: |
           node_modules
           .next/*
@@ -38,7 +37,6 @@ jobs:
     - name: Restore Next cache
       uses: actions/cache@v2
       with:
-        working-directory: ./docs
         path: .next/.next/cache
         # Generate a new cache whenever packages or source files change.
         key: ${{ runner.os }}-nextjs-${{ hashFiles('.next/yarn.lock', '.next/package-lock.json') }}-${{ hashFiles('.next/**.[jt]s', '.next/**.[jt]sx') }}
@@ -50,9 +48,8 @@ jobs:
     - name: Deploy site
       uses: peaceiris/actions-gh-pages@v3
       with:
-        working-directory: ./docs
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: pages
-        publish_dir: docs/
+        publish_dir: ./docs/docs/
         force_orphan: true
         cname: https://threesplus.com
