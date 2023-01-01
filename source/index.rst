@@ -25,9 +25,17 @@ pages including items such as illustrations or improved descriptions.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: How To Play:
 
    How To Play/Dealing
+   How To Play/Prior To First Play
+   How To Play/Playing
+   How To Play/Ending The Game
+   How To Play/Errors
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Card Rules:
 
    Card Rules/Aces
 

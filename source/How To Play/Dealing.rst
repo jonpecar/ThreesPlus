@@ -1,6 +1,8 @@
 How To Play: Dealing
 =====================
 
+.. index:: Dealing
+
 Each player will be dealt the following:
 
 1. 3 face down cards in front of the player;
