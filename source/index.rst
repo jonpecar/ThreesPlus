@@ -56,8 +56,14 @@ pages including items such as illustrations or improved descriptions.
    CardRules/Queen
    CardRules/Joker
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
+   :caption: Navigation:
 
-* :ref:`genindex`
-* :ref:`search`
+   genindex
+
+.. Indices and tables
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`search`
