@@ -10,6 +10,9 @@ which can be played with one or more standard decks of playing cards. This varia
 built of rules which have been ordanically added over time. It is intended that this rule
 book will be kept up to date as rules are organically added through player suggestions.
 
+The game cam be played with a deck of standard playing cards. It is recommened to play with multiple
+decks of cards for the best experience. Three decks is a good amount, particularly for groups of 4 or more.
+
 If you would like to contribute new rules or modifications to existing rules, please
 submit an issue or pull request at the GitHub page which can be found 
 here_.
@@ -37,7 +40,21 @@ pages including items such as illustrations or improved descriptions.
    :maxdepth: 2
    :caption: Card Rules:
 
-   CardRules/Aces
+   CardRules/GeneralRules
+   CardRules/Ace
+   CardRules/Two
+   CardRules/Three
+   CardRules/Four
+   CardRules/Five
+   CardRules/Six
+   CardRules/Seven
+   CardRules/Eight
+   CardRules/Nine
+   CardRules/Ten
+   CardRules/Jack
+   CardRules/King
+   CardRules/Queen
+   CardRules/Joker
 
 Indices and tables
 ==================

@@ -17,3 +17,5 @@ they are to be played. If a player is to look at a face down card before it is p
 will take the face down card into their hand, the face down card will be replaced with
 a new face down card and an additional face down card will be given to the offending
 player as described under :ref:`Errors<How To Play: Errors>`.
+
+It is recommended that the game be played with multiple decks for the best experience.
