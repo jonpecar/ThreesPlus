@@ -10,9 +10,9 @@ Play will go in order around the table in an order as determined at the start of
 as determined by the cards. The cards which change the direction of play are described
 in the cards section.
 On each player’s turn they may do one of two options (at the discretion of the player):
-1. Pick up the cards in play if they cannot go or if they choose to do so;
-1.4 Errors
-2. Play a card or cards if they have a valid move.
+
+1.  Pick up the cards in play if they cannot go or if they choose to do so;
+2.  Play a card or cards if they have a valid move.
 
 What Can Be Played
 ------------------
@@ -39,8 +39,10 @@ End of Turn
 .. index:: End of Turn
 
 At the end of the players turn they must have in their hand the greater of:
-1. 3 cards;
-2. Number of face down cards in front of the player.
+
+1.  3 cards;
+2.  Number of face down cards in front of the player.
+
 If after completing their turn they have fewer than this, they must pickup until reaching
 that number or until there are no more draw cards available.
 
