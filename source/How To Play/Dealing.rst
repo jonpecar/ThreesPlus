@@ -1,10 +1,8 @@
----
-id: ei2mq8ujkgt3ftfry1bw4h5
-title: Dealing
-desc: ''
-updated: 1671354574501
-created: 1671353609331
----
+How To Play: Dealing
+=====================
+
+.. index:: Dealing
+
 Each player will be dealt the following:
 
 1. 3 face down cards in front of the player;

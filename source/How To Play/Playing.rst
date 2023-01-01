@@ -1,11 +1,11 @@
----
-id: sdahwdmhgqw1w16mbtxfjyw
-title: Playing
-desc: ''
-updated: 1671354571986
-created: 1671353632604
----
-## Order of Play
+How To Play: Playing
+====================
+
+
+Order of Play
+-------------
+.. index:: Order of Play
+
 Play will go in order around the table in an order as determined at the start of the game or
 as determined by the cards. The cards which change the direction of play are described
 in the cards section.
@@ -13,7 +13,11 @@ On each player’s turn they may do one of two options (at the discretion of the
 1. Pick up the cards in play if they cannot go or if they choose to do so;
 1.4 Errors
 2. Play a card or cards if they have a valid move.
-## What Can Be Played
+
+What Can Be Played
+------------------
+.. index:: What To Play
+
 Cards shall be played in ascending numeric order, with Four being the lowest value
 card and Ace being highest (Two and Three are special cards and do not have an value
 as such). There are many exceptions to this rule which are detailed in the rules for
@@ -30,7 +34,9 @@ include their face up cards of this value in their play. If this action clears a
 in one turn (i.e. no face up cards were previously played) then the player may play one
 face down card.
 
-## End of Turn
+End of Turn
+-----------
+.. index:: End of Turn
 
 At the end of the players turn they must have in their hand the greater of:
 1. 3 cards;
@@ -38,7 +44,10 @@ At the end of the players turn they must have in their hand the greater of:
 If after completing their turn they have fewer than this, they must pickup until reaching
 that number or until there are no more draw cards available.
 
-## During Others’ Turns
+During Others’ Turns
+--------------------
+.. index:: During Other Turns
+
 If at any point during another players’ turn any player loses cards such that they are
 below their minimum threshold, they must pickup from the draw pile to their minimum
 quantity if possible.

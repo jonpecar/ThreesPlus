@@ -1,11 +1,10 @@
----
-id: 2hqz89w2mg08wdjq9bdvvz2
-title: Threes Plus the Card Game
-desc: ''
-updated: 1671445167798
-created: 1671351863937
----
-# Overview
+.. Threes Plus documentation master file, created by
+   sphinx-quickstart on Sat Dec 31 13:26:08 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to the Threes Plus Rules!
+=======================================
 This is the rules page for the Threes Plus card game. This is a modification of the card game Threes
 which can be played with one or more standard decks of playing cards. This variant is
 built of rules which have been ordanically added over time. It is intended that this rule
@@ -13,7 +12,7 @@ book will be kept up to date as rules are organically added through player sugge
 
 If you would like to contribute new rules or modifications to existing rules, please
 submit an issue or pull request at the GitHub page which can be found 
-[here](https://github.com/jonpecar/ThreesPlus).
+here_.
 New rules will be considered on a case-by-case basis depending
 on how the integrate with existing rules, the value they add and their level of
 complexity. Please provide details in your pull request or issue description outlining
@@ -22,23 +21,26 @@ how the proposed change will improve the game.
 In addition to rule changes, please feel free to contribute improvements to the rules
 pages including items such as illustrations or improved descriptions.
 
-# How To Play
+.. _here: https://github.com/jonpecar/ThreesPlus
 
-The following pages outline the rules for how to play, including dealing, setup, turn
-order and end-game.
+.. toctree::
+   :maxdepth: 2
+   :caption: How To Play:
 
-- [[How To Play.Dealing]]
-- [[How To Play.Prior To Starting Play]]
-- [[How To Play.Playing]]
-- [[How To Play.Errors]]
-- [[How To Play.Ending The Game]]
+   How To Play/Dealing
+   How To Play/Prior To First Play
+   How To Play/Playing
+   How To Play/Ending The Game
+   How To Play/Errors
 
-# Card Rules
+.. toctree::
+   :maxdepth: 2
+   :caption: Card Rules:
 
-The following sections outline the rules which apply to played cards.
+   Card Rules/Aces
 
-** This section is under construction **
+Indices and tables
+==================
 
-[[Rules For All Cards]]
-
-[[Rules For Individual Cards]]
+* :ref:`genindex`
+* :ref:`search`

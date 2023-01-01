@@ -1,10 +1,8 @@
----
-id: j6lw5e8tqe87b2pkp5fh58z
-title: Errors
-desc: ''
-updated: 1671354576979
-created: 1671353637577
----
+How To Play: Errors
+===================
+
+.. index:: Errors
+
 If a player makes an error they will be given an additional face down card. This may
 raise the minimum number of cards they must have in their hand.
 An error can be anything including but not limited to:
