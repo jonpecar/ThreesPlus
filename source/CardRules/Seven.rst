@@ -9,5 +9,5 @@ Card Rules: Seven
     disclaim ”Always Keep a Four”. At this point all players including the current player
     must show a Four from their hand. Those who do not will be considered to violate the rule
     to always keep a :ref:`Four<Card Rules: Four>` and receive an extra face down card due
-    to the:ref:`Error<How To Play: Errors>`.
+    to the :ref:`Error<How To Play: Errors>`.
 
