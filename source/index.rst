@@ -7,7 +7,7 @@ Welcome to the Threes Plus Rules!
 =======================================
 This is the rules page for the Threes Plus card game. This is a modification of the card game Threes
 which can be played with one or more standard decks of playing cards. This variant is
-built of rules which have been ordanically added over time. It is intended that this rule
+built of rules which have been organically added over time. It is intended that this rule
 book will be kept up to date as rules are organically added through player suggestions.
 
 The game cam be played with a deck of standard playing cards. It is recommened to play with multiple
